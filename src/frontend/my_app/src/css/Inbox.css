@@ -1,0 +1,123 @@
+.inbox-container {
+    padding: 20px;
+    flex-grow: 1;
+    height: 100vh;
+  }
+  
+  .mail-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .mail-item {
+    padding: 10px;
+    border: 1px solid #5e5c5c;
+    background-color: #8d8a8a;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .mail-item:hover {
+    background-color: #979797;
+  }
+  
+  .mail-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .mail-details {
+    padding: 10px;
+    font-family: monospace;
+    border: 3px dotted #545353;
+    margin: 10px;
+
+  }
+
+ 
+  
+  .mail-actions {
+    margin-top: 10px;
+  }
+  
+  .application-status-container {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #787777;
+  }
+  
+  .application-status-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  .indicator.green {
+    background-color: green;
+  }
+  
+  .indicator.red {
+    background-color: red;
+  }
+
+  .trackRequestStatus{
+   
+    padding:5px;
+    color: #121010;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.7em;
+    font-family: bold;
+  }
+
+  .trackRequestStatus:hover{
+   
+    color: #ff3700;
+    text-underline-offset:inherit;
+    scale: 0.8;
+  }
+
+
+  .acceptBtn {
+    background-color: #10c316;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: auto;
+  }
+
+  .rejectBtn {
+    background-color: #e41010;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+  }
+
+  .acceptBtn:hover{
+    background-color: #074e0a;
+  }
+
+  .rejectBtn:hover{
+    background-color: #4f1010;
+  }
+
+  .mail-body{
+    margin: 40px;
+  }

@@ -1,0 +1,158 @@
+
+
+  .chatbox-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.back-button {
+  align-self: flex-start;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.recipients-select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.chat-display {
+ 
+  flex: 1;
+  overflow: auto;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: #a1a1a1;
+}
+
+.chat-message {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.chat-message.sent {
+  justify-content: flex-end;
+}
+
+.chat-message.received {
+  justify-content: flex-start;
+}
+
+.chat-message.sent strong,
+.chat-message.sent small,
+.chat-message.sent span {
+  background-color: rgb(133, 242, 131);
+  padding: 7px;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.chat-message.received strong,
+.chat-message.received small,
+.chat-message.received span {
+  background-color: rgb(211, 245, 245);
+  padding: 7px;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.chat-bubble {
+  max-width: 60%;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.chat-bubble.sent {
+  background-color: #a1a1a1;
+  align-self: flex-end;
+  border: 2px dotted rgb(9, 234, 69);
+}
+
+.chat-bubble.received {
+  background-color: #a1a1a1;
+  align-self: flex-start;
+  border: 2px dotted rgb(243, 247, 245);
+}
+
+.chat-bubble.sent::after,
+.chat-bubble.received::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.chat-bubble.sent::after {
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #dcf8c6;
+  right: -10px;
+  top: 10px;
+}
+
+.chat-bubble.received::after {
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #ebebeb transparent transparent;
+  left: -10px;
+  top: 10px;
+}
+
+input[type="text"] {
+  width: calc(100% - 50px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 50%;
+  margin-bottom: 20px;
+
+}
+
+button {
+  padding: 5px ;
+  border: none;
+  background-color: #515351;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+
+}
+
+button:hover {
+  background-color: #121212;
+}
+
+.receiverName{
+  
+  padding: 10px;
+  margin: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
